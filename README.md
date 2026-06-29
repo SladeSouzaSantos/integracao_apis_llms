@@ -52,9 +52,52 @@ curl -X POST http://localhost:3000/v1/chat/completions \
 
 ---
 
+### 2. [Langchain Intro](./langchain-intro) 🧠
+**Status:** `Ativo`
+
+Este projeto serve como um laboratório prático para exploração e validação de implementações utilizando os frameworks **LangChain** e **LangGraph**. O foco é o estudo de fluxos de agentes, memória e orquestração de cadeias complexas.
+
+#### ✨ Funcionalidades
+- **Estudo de Frameworks:** Implementação prática de conceitos do LangChain e LangGraph.
+- **Validação de Fluxos:** Verificação de grafos de estados e agentes autônomos.
+- **Ambiente de Testes:** Suite de testes E2E para garantir a integridade dos fluxos.
+
+#### ⚙️ Configuração e Instalação
+
+1. **Pré-requisitos**
+   - Node.js (v20 ou superior)
+   - Gerenciador de pacotes (npm ou yarn)
+
+2. **Instalação**
+   ```bash
+   cd langchain-intro
+   npm install
+   ```
+
+3. **Variáveis de Ambiente**
+   Crie um arquivo `.env` na pasta do projeto:
+   ```env
+   LANGSMITH_API_KEY=your-api-key
+   LANGCHAIN_TRACING_V2=true
+   LANGCHAIN_PROJECT=langchain-intro
+   ```
+
+4. **Execução e Testes**
+   Para rodar os testes de integração/E2E:
+   ```bash
+   npm test
+   ```
+
+#### 🚀 Exemplo de Uso
+```bash
+curl localhost:3000/chat --data '{"question": "uppercase this"}' -H "Content-type: application/json"
+```
+
+---
+
 ## 🛠️ Roadmap de Projetos
 - [x] Smart Model Router Gateway
-- [ ] Langchain Intro
+- [x] Langchain Intro
 - [ ] Medical Appointment
 - [ ] Song Highlights
 - [ ] Safeguard Prompt Injection
@@ -62,4 +105,4 @@ curl -X POST http://localhost:3000/v1/chat/completions \
 - [ ] Doc Analysis
 
 ## 📜 Licença
-Este projeto está sob a licença MIT.
+Este projeto está sob a licença ISC.
