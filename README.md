@@ -135,13 +135,7 @@ O **Medical Appointment** é um serviço especializado voltado para o gerenciame
 
 #### 🚀 Exemplo de Uso
 ```bash
-curl -X POST http://localhost:3000/appointment \
-  -H "Content-Type: application/json" \
-  -d '{
-    "patient_name": "João Silva",
-    "specialty": "Cardiologia",
-    "date": "2024-12-25"
-  }'
+curl.exe --% localhost:3000/chat --data "{\"question\": \"Meu nome é Pedro Santos, gostaria de marcar uma consulta com a Dra. Carol amanhã às 10h da manhã.\"}" -H "Content-type: application/json"
 ```
 
 ---
