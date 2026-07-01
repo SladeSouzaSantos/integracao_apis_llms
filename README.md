@@ -95,10 +95,61 @@ curl localhost:3000/chat --data '{"question": "uppercase this"}' -H "Content-typ
 
 ---
 
+### 3. [Medical Appointment](./medical-appointment) 🩺
+**Status:** `Ativo`
+
+O **Medical Appointment** é um serviço especializado voltado para o gerenciamento e automação de agendamentos médicos utilizando IA. O projeto utiliza agentes inteligentes para processar requisições, verificar disponibilidade e estruturar dados de consultas médicas de forma automatizada.
+
+#### ✨ Funcionalidades
+- **[Funcionalidade 1: Ex: Extração de Entidades]:** [Ex: Identificação automática de especialidade e data da consulta via NLP].
+- **[Funcionalidade 2: Ex: Orquestração de Agentes]:** [Ex: Uso de LangGraph para gerenciar o fluxo entre paciente e médico].
+- **[Funcionalidade 3: Ex: Validação de Dados]:** [Ex: Verificação de formatos de data e integridade de informações médicas].
+
+#### ⚙️ Configuração e Instalação
+
+1. **Pré-requisitos**
+   - Node.js (v20 ou superior)
+   - Gerenciador de pacotes (npm ou yarn)
+
+2. **Instalação**
+   ```bash
+   cd medical-appointment
+   npm install
+   ```
+
+3. **Variáveis de Ambiente**
+   Crie um arquivo `.env` na pasta do projeto com as configurações necessárias:
+   ```env
+   # [Exemplo: API Key para o serviço de IA]
+   [NOME_DA_VARIAVEL]=[sua_chave_aqui]
+   
+   # [Exemplo: Configuração de Banco de Dados ou outro serviço]
+   [OUTRA_VARIAVEL]=[valor]
+   ```
+
+4. **Execução e Testes**
+   Para rodar os testes de integração/E2E:
+   ```bash
+   npm test
+   ```
+
+#### 🚀 Exemplo de Uso
+```bash
+curl -X POST http://localhost:3000/appointment \
+  -H "Content-Type: application/json" \
+  -d '{
+    "patient_name": "João Silva",
+    "specialty": "Cardiologia",
+    "date": "2024-12-25"
+  }'
+```
+
+---
+
 ## 🛠️ Roadmap de Projetos
 - [x] Smart Model Router Gateway
 - [x] Langchain Intro
-- [ ] Medical Appointment
+- [x] Medical Appointment
 - [ ] Song Highlights
 - [ ] Safeguard Prompt Injection
 - [ ] RAG Neo4j Students
